@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>wr.IncreasedTreeLifespan</packageId>
+    <modVersion>0.1</modVersion>
+    <name>Increased Tree Lifespan</name>
+    <author>wuphonsreach</author>
+    <url>https://github.com/WuphonsReach/rimworld-IncreasedTreeLifespan</url>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+    <loadAfter>
+        <li>imranfish.xmlextensions</li>
+    </loadAfter>
+    <description>
+Increase the tree lifespans so that they don't die after just 2-3 years.    
+    </description>
+</ModMetaData>

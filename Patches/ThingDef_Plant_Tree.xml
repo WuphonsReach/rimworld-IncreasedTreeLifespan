@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- 
+  Looks like lifespanDaysPerGrowDays drives the overall lifespan of the tree.
+  Default is 9:1 ratio.  See: Defs/ThingDef[@Name="TreeBase"]
+  Therefore, first pass will be to change 9:1 to 45:1 (5x increase).
+  -->
+
+  <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+    <xpath>Defs/ThingDef[@Name="TreeBase"]</xpath>
+    <value>
+        <plant>
+            <lifespanDaysPerGrowDays>45</lifespanDaysPerGrowDays>
+        </plant>
+    </value>
+  </Operation>
+
+  <!-- example for if I decide to adjust by tree type -->
+  <!--
+  <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]</xpath>
+    <value>
+        <plant>
+            <lifespanDaysPerGrowDays>27</lifespanDaysPerGrowDays>
+        </plant>
+    </value>
+  </Operation>
+  -->
+
+</Patch>
